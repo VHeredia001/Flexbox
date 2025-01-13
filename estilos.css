@@ -34,11 +34,11 @@ justify-content: space-between;
 
 header nav{
   background-color: red;
-  padding: 2%;
+  padding: 1%;
   text-align: center;
   
 
-  flex-basis: 30%;
+  flex-basis: 40%;
 }
 
 nav a{
@@ -50,6 +50,55 @@ nav a{
 }
 nav a:hover{
  background-color: blueviolet;
+}
+
+section  {
+background-color: #ffffff;
+padding: 1.5em;
+flex-basis: 60%;
+}
+section p, section hr, section h2{
+  margin-bottom: 1.5em;
+}
+aside {
+  background-color: red;
+  flex: 1 1 40%;
+}
+
+aside p{
+  background-color: gold;
+  padding: 1.5em;
+  margin: 1em;
+}
+
+footer{
+  background-color: gold;
+  color: #ffffff;
+  flex: 1 1 100%;
+  padding: 1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (max-width: 760px){
+  .Container{
+    flex-flow: column;
+  }
+
+  header{
+    margin: 0;
+    padding: 0;
+
+    justify-content: center;
+  }
+
+  header nav{
+    flex-basis: 100%;
+  }
+  h2{
+    padding: 1.5em 0;
+  }
+  
 }
 
 
